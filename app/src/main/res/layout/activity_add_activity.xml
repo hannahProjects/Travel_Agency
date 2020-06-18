@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+
+
+    tools:context="com.example.user.android5777_3372_8622_01.Controller.AddActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activityName"
+        android:hint="activity name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity Kind: "
+            android:textSize="18sp" />
+
+        <Spinner
+        android:id="@+id/activitiesNameSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Select start date:"
+        android:layout_gravity="start"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textSize="18sp" />
+
+    <com.example.user.android5777_3372_8622_01.Controller.CustomDatePicker
+        android:id="@+id/StartDateCustomDatePicker"
+        android:layout_height="30dp"
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:textStyle="normal|bold"
+        android:fontFamily="serif" />
+
+    <TextView
+        android:text="Select end date:"
+        android:layout_gravity="start"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textSize="18sp" />
+
+    <com.example.user.android5777_3372_8622_01.Controller.CustomDatePicker
+        android:id="@+id/EndDateCustomDatePicker"
+        android:layout_height="30dp"
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:textStyle="normal|bold"
+        android:fontFamily="serif" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/activityCountry"
+        android:hint="activity country" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextPrice"
+        android:inputType="number"
+        android:hint="Price"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextDescription"
+        android:hint="Descripition"/>
+    <Spinner
+        android:id="@+id/businessNameSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/textViewBusiness"
+        android:hint="                "/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/saveButton"
+        android:text="save"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo"
+            android:id="@+id/imageView"
+            android:layout_row="10"
+            android:layout_column="10" />-->
+
+    </GridLayout>
+
+
+</LinearLayout>

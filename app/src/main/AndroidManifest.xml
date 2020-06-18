@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.android5777_3372_8622_01">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Controller.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Controller.UserLogIn" />
+        <activity android:name=".Controller.UserListActivity" />
+        <activity android:name=".Controller.BusinessLogIn" />
+        <activity android:name=".Controller.UpdateActivity" />
+        <activity android:name=".Controller.BusinessUpdate" />
+        <activity android:name=".Controller.ShowActivity" />
+        <activity android:name=".Controller.AddBusiness" />
+        <activity android:name=".Controller.AddActivity" />
+
+        <provider
+            android:name=".Model.backend.MyContentProvider"
+            android:authorities="com.example.user.android5777_3372_8622_01"
+            android:enabled="true"
+            android:exported="true"
+            android:multiprocess="true" />
+
+        <receiver
+            android:name=".Model.backend.MyBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.user.android5777_3372_8622_01" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".Model.backend.MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Controller.BusinessList" />
+        <activity android:name=".Controller.ListActivity"></activity>
+    </application>
+
+</manifest>
